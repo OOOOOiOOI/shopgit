@@ -1,0 +1,18 @@
+<?php return array (
+  'Cheque' => 'ตรวจสอบ',
+  'Purchase' => 'ซื้อ',
+  'Expense' => 'ค่าใช้จ่าย',
+  'Asset' => 'สินทรัพย์',
+  'Income' => 'รายได้',
+  'Liabilities' => 'หนี้สิน',
+  'Sale' => 'ขาย',
+  'Cash' => 'เงินสด',
+  'Bank' => 'ธนาคาร',
+  'Loan' => 'เงินกู้',
+  'Liability' => 'ความรับผิด',
+  'GST Tax Account' => 'บัญชีภาษี',
+  'Product Wise Tax Account' => 'บัญชีภาษีสินค้า',
+  'Seller Account' => 'บัญชีผู้ขาย',
+  'Seller Commision' => 'คอมมิชชั่นผู้ขาย',
+  'Sallary Account' => 'บัญชีเงินเดือน',
+);

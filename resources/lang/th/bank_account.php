@@ -1,0 +1,15 @@
+<?php return array (
+  'Bank Accounts' => 'บัญชีธนาคาร',
+  'New Account' => 'บัญชีใหม่',
+  'Select Default Account For' => 'เลือกบัญชีเริ่มต้นสำหรับ',
+  'The requested bank account deleted successful' => 'ลบบัญชีธนาคารที่ขอสำเร็จ',
+  'The requested bank account created successful' => 'สร้างบัญชีธนาคารที่ขอสำเร็จ',
+  'The requested bank account updated successful' => 'อัปเดตบัญชีธนาคารที่ขอสำเร็จ',
+  'Bank Name' => 'ชื่อธนาคาร',
+  'title' => 'ชื่อ',
+  'Branch Name' => 'ชื่อสาขา',
+  'Account Name' => 'ชื่อบัญชี',
+  'Account Number' => 'หมายเลขบัญชี',
+  'You can\\\'t delete an account which has child element' => 'คุณไม่สามารถลบบัญชีที่มีองค์ประกอบลูก',
+  'The requested bank account is not found' => 'ไม่พบบัญชีธนาคารที่ร้องขอ',
+);

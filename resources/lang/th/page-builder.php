@@ -1,0 +1,15 @@
+<?php return array (
+  'Page Builder' => 'ตัวสร้างเพจ',
+  'Pages' => 'หน้า',
+  'Page' => 'หน้า',
+  'Add New' => 'เพิ่มใหม่',
+  'SL' => 'ไอดี',
+  'Title' => 'ชื่อ',
+  'Slug' => 'Slug',
+  'Status' => 'สถานะ',
+  'Body' => 'Body',
+  'Create' => 'สร้าง',
+  'Create Page' => 'สร้างเพจ',
+  'Update Page' => 'อัพเดทเพจ',
+  'Design' => 'ออกแบบ',
+);

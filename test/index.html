@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>BigSeller - Login & Register</title>
+    <!--[if IE 8]> <html lang="th" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="th" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="th"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="เข้าสู่ระบบ ลงทะเบียนเข้าใช้งาน ลืมรหัสผ่าน ...">
+
+<meta property="og:type" content="site">
+<meta property="og:url" content="//www.bigseller.com">
+<meta property="og:site_name" content="BigSeller">
+<meta property="og:title" content="BigSeller - Login & Register">
+<meta property="og:description" content="เข้าสู่ระบบ ลงทะเบียนเข้าใช้งาน ลืมรหัสผ่าน ..." xmlns:og="http://opengraphprotocol.org/schema/">
+<meta property="og:image" content="//www.bigseller.com/static/images/logo/logo-350.png">
+<meta name="facebook-domain-verification" content="vzz63fb4md1z7x2h00e62uw3bwtt93" />
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="https://www.bigseller.com/static/frame/bootstrap/css/bootstrap.min.css?v=5.5" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://www.bigseller.com/static/js/comm/jq.js?v=5.5"></script><script src="https://www.bigseller.com/static/frame/bootstrap/js/bootstrap.min.js?v=5.5"></script><link href="https://www.bigseller.com/static/css/comm/main.css?v=22.5" rel="stylesheet"><link href="https://www.bigseller.com/static/css/comm/new_fonts.css?v=22.5" rel="stylesheet"><script src="https://www.bigseller.com/static/js/comm/main.js?v=22.4"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-144755561-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var $userId = $('#userIDValue');
+    $userId.length && $userId.attr('data-value') && gtag('set', {'user_id':$userId.attr('data-value')});
+    gtag('config', 'UA-144755561-1');
+    gtag('config', 'AW-372371433');
+    <!-- Event snippet for ç½é¡µæµè§ conversion page -->
+    gtag('event', 'conversion', {'send_to': 'AW-372371433/Z1YXCM6nyJoCEOnfx7EB'});
+    <!-- Event snippet for æ³¨å conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-372371433/7iBTCMj-75oCEOnfx7EB',
+            'event_callback': callback
+        });
+        return false;
+    }
+</script><link href="https://www.bigseller.com/static/css/index/main.css?v=11.1" rel="stylesheet">
+    <link href="https://www.bigseller.com/static/css/index/index.css?v=11.1" rel="stylesheet">
+    <link rel="alternate" hreflang="x-default" href="https://www.bigseller.com/en_US/login.htm">
+    <link rel="alternate" hreflang="en" href="https://www.bigseller.com/en_US/login.htm">
+    <link rel="alternate" hreflang="id" href="https://www.bigseller.com/in/login.htm">
+    <link rel="alternate" hreflang="zh" href="https://www.bigseller.com/zh_CN/login.htm">
+    <link rel="alternate" hreflang="vi" href="https://www.bigseller.com/vi/login.htm">
+    <link rel="alternate" hreflang="th" href="https://www.bigseller.com/th/login.htm">
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '304378414475874');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=304378414475874&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code --></head>
+<body>
+    <input type="hidden" id="comLanguage" value="th"/>
+<input type="hidden" id="lang" value="">
+<input type="hidden" id="countrySite" value="">
+<input type="hidden" id="hasMainUser" value="0"><input id="indexPageType" value="login" type="hidden"/>
+    <nav class="index_head" data-val="th">
+    <input type="hidden" id="lang" value="">
+    <ul class="nav index_nav unselected">
+        <li class="logo"></li>
+        <li class="nav_list rt d_n" data-rel="login">
+            <a class="btn btn_primary" href="https://www.bigseller.com/th/login.htm?rel=register">
+                ลงทะเบียนฟรี</a>
+        </li>
+        <li class="nav_list rt d_n" data-rel="login">
+            <a href="https://www.bigseller.com/th/login.htm?rel=login&">
+                เข้าสู่ระบบ</a>
+        </li>
+        <li class="line rt d_n" data-rel="login"></li>
+        <li class="nav_list help rt dropdown showHref"><a href="javascript:"><span class="bsicon_help_circle"></span><span class="ml_5 f_16">ช่วยเหลือ</span></a>
+            <ul class="dropdown-menu customer_nav_list flo_r customerNavList" data-type="head">
+<li data-type="faq"><a href="https://help.bigseller.com/th/index" target="_blank"><span class="customer_icon"></span>ศูนย์ช่วยเหลือ</a></li>
+                <li data-type="facebook"><a href="https://www.facebook.com/BigSellerERP.th" target="_blank"><span class="customer_icon"></span>Facebook</a></li>
+                    <li data-type="email"><a href="mailto:support@bigseller.com"><span class="customer_icon"></span>อีเมล</a></li>
+                    <li data-type="line"><a href="javascript:"><span class="customer_icon"></span>Line</a></li>
+                </ul>
+        </li>
+        <li class="rt lang dropdown" data-rel="hover">
+            <span class="cont">
+                <span class="lang_name">
+                </span>
+                <span class="bsicon_caret_down ml_5 f_14"></span>
+            </span>
+            <ul class="dropdown-menu flo_r">
+                <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('en_US')">English</a></li>
+                <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('in')">Indonesia</a></li>
+                <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('zh_CN')">中文</a></li>
+                <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('vi')">Tiếng Việt</a></li>
+                <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('th')">ไทย</a></li>
+            </ul>
+        </li>
+        <li class="nav_list rt" data-rel="blog">
+            <a href="https://www.bigseller.com/blog/index.htm">Blog</a>
+        </li>
+        <li class="nav_list rt" data-rel="aboutUs">
+            <a href="https://www.bigseller.com/th/aboutUs.htm">
+                เกี่ยวกับเรา</a>
+        </li>
+        <li class="nav_list rt" data-rel="home">
+            <a href="https://www.bigseller.com/th/index.htm">
+                หน้าหลัก</a>
+        </li>
+    </ul>
+    <ul class="mobile_nav unselected mobileNav">
+        <li class="dropdown">
+            <span class="bsicon_menu icon" data-toggle="dropdown"></span>
+            <ul class="dropdown-menu">
+                <li class="home">
+                    <a href="https://www.bigseller.com/th/index.htm">
+                        หน้าหลัก</a>
+                </li>
+                <li>
+                    <a href="https://www.bigseller.com/th/aboutUs.htm">
+                        เกี่ยวกับเรา</a>
+                </li>
+                <li><a class="mobileDropdown" href="javascript:">
+                        <span>บริการลูกค้า</span>
+                        <span class="bsicon_chevron_right1 chevron rt"></span>
+                    </a>
+                    <ul class="mobile_dropdown customer_nav_list dropdownMenu hide customerNavList" data-type="head">
+                        <li data-type="faq"><a href="https://www.bigseller.com/help/th/index.htm" target="_blank"><span class="customer_icon"></span>ศูนย์ช่วยเหลือ</a></li>
+                        <li data-type="facebook"><a href="https://www.facebook.com/BigSellerERP.th" target="_blank"><span class="customer_icon"></span>Facebook</a></li>
+                            <li data-type="email"><a href="mailto:support@bigseller.com"><span class="customer_icon"></span>อีเมล</a></li>
+                            <li data-type="line"><a href="javascript:"><span class="customer_icon"></span>Line</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a class="mobileDropdown" href="javascript:">
+                        <span>Language (<span class="lang_name"></span>)</span>
+                        <span class="bsicon_chevron_right1 chevron rt"></span>
+                    </a>
+                    <ul class="mobile_dropdown dropdownMenu hide">
+                        <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('en_US')">English</a></li>
+                        <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('in')">Indonesia</a></li>
+                        <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('zh_CN')">中文</a></li>
+                        <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('vi')">Tiếng Việt</a></li>
+                        <li><a href="javascript:" onclick="COMMON_FN.navChangeLang('th')">ไทย</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="logo"><a href="https://www.bigseller.com/index.htm"></a></li>
+        <li class="register flex column">
+            <a href="https://www.bigseller.com/th/login.htm?rel=login">
+                เข้าสู่ระบบ</a>
+            <a class="mt_10" href="https://www.bigseller.com/th/login.htm?rel=register">
+                ลงทะเบียนเข้าใช้งาน</a>
+        </li>
+    </ul>
+</nav>
+<div class="preventCollapse prevent_collapse"></div>
+<div class="modal customer_code_modal" id="customerCodeModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">close</span>
+                </button>
+            </div>
+            <div class="modal-body modalBody"></div>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="customerCodeContentHtml">
+    <img src="@{url}">
+    <p>สแกนรหัสเพื่อติดต่อเรา</p>
+</script>
+<script src="https://www.bigseller.com/static/js/comm/footer_comm.js?v=22.4"></script>
+<script>
+    (function(type){
+        COMMON_FN.preventNesting(); // 防止页面嵌套
+        type !== 'login' && $('[data-rel="login"]').removeClass('d_n');
+        (type === 'home' || type === 'aboutUs') && $('li[data-rel="'+type+'"]').addClass('active');
+        var value = COMMON_FN.getCookie('org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE') || $('#comLanguage').val(),
+            showLanguage = 'EN';
+        if(!value || !value.length){
+            value = navigator.language || navigator.browserLanguage;
+        }
+        if(value === 'zh_CN' || value === 'zh-CN'){
+            value = 'zh_CN';
+        }else if(value === 'id' || value === 'in'){
+            value = 'in_ID';
+        }else if(value === 'vi' || value === 'vi-VN'){
+            value = 'vi_VN';
+        }else if(value === 'th' || value === 'th-TH'){
+            value = 'th_TH';
+        }else {
+            value = 'en_US';
+        }
+        if(value === 'in_ID'){showLanguage = 'ID';}
+        if(value === 'zh_CN'){showLanguage = 'CN';}
+        if(value === 'vi_VN'){showLanguage = 'VN';}
+        if(value === 'th_TH'){showLanguage = 'TH';}
+        $('ul.unselected').find('li span.lang_name').html(showLanguage);
+        $('#lang').val(value);
+        /* 移动端适配操作 */
+        // type !== 'aboutUs' && $('body').addClass('min_width');
+        type === 'login' && $('.mobileNav .register').addClass('op_0');
+        $('.mobileDropdown').on('click', function(e) {
+            e = e || window.event;
+            e.stopPropagation();
+            var $this = $(this),
+                $dropdownMenu = $this.closest('li').find('.dropdownMenu');
+           if ($dropdownMenu.hasClass('hide')) {
+               $this.find('span.chevron').removeClass('bsicon_chevron_right1').addClass('bsicon_chevron_down1');
+               $dropdownMenu.removeClass('hide');
+               FOOTER_COMM.setLinks($this, value);
+           } else {
+               $dropdownMenu.addClass('hide');
+               $this.find('span.chevron').removeClass('bsicon_chevron_down1').addClass('bsicon_chevron_right1');
+           }
+        });
+
+        /* nav 吸顶 */
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 0) {
+                $('nav').addClass('ceiling_top')
+            } else {
+                $('nav').removeClass('ceiling_top')
+            }
+        });
+    })($('#indexPageType').val());
+
+    $(function() { // 页面加载完成之后加载
+        $.getScript(COMMON_FN.getWinLocHref() + 'static/js/comm/customer_service.js', function() {
+            CUSTOMER_SERVICE_FN.init();
+        });
+    });
+</script><div class="flex center_just">
+        <div class="login_module tabs_module">
+            <ul class="tab flex center_just">
+                <li class="active"><a href="#loginModule" data-toggle="tab">เข้าสู่ระบบ</a></li>
+                <li class=""><a href="#registerModule" data-toggle="tab">ลงทะเบียนเข้าใช้งาน</a></li>
+            </ul>
+            <div class="tab_content" >
+                <div class="tab_pane active login" id="loginModule">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdyoW1v_jI6MDl7uRZ6VHlnrwJoG9jFJQtyKNgsKVJ3HlCz3Q/formResponse" method="post">
+                    <div class="total_error loginTotalError"></div>
+                    <div class="rows formOut">
+                        <input class="registerEvent" data-type="login" data-code="email" type="text" id="username" name="entry.1234338037" autocomplete="new-password" placeholder="อิเมล">
+                        <div class="items_error itemsError" id="loginNameErr"></div>
+                    </div>
+                    <div class="rows formOut eyePassword">
+                        <input class="registerEvent eyePassword_loginInput" data-type="login" data-code="password" type="password" id="password" name="entry.1940769745" autocomplete="new-password" placeholder="รหัสผ่าน">
+                        <span class="bsicon_eye_off f_gray eyeSwitch_login"></span>
+                        <div class="items_error itemsError" id="loginPasswordErr"></div>
+                    </div>
+                    <div class="rows mb_10">
+                        <button type="submit" class="btn btn_primary"  >เข้าสู่ระบบ</button>
+                    </div>
+                </form>
+                    <div class="rows">
+                        <a href="https://www.bigseller.com/th/forgetPwd.htm">ลืมรหัสผ่าน ?</a>
+                    </div>
+                </div>
+
+                <div class="tab_pane  register" id="registerModule">
+                    <div class="total_error registerTotalError"></div>
+                    <div class="rows formOut">
+                        <input class="registerEvent" data-type="register" data-code="email" type="text" id="resaccount" name="account" value="" autocomplete="new-password" placeholder="อิเมล">
+                        <div class="items_error itemsError" id="registerNameErr"></div>
+                    </div>
+                    <div class="rows formOut">
+                        <div class="ipt_group">
+                            <input class="registerEvent" data-type="register" data-code="code" type="text" id="verificationCode" name="verificationCode" value="" placeholder="รหัสยืนยัน">
+                            <button class="btn" type="button" onclick="window.LOGIN && LOGIN.getCode('register')">ส่งรหัสยืนยัน</button>
+                        </div>
+                        <div class="items_error itemsError" id="verificationCodeErr"></div>
+                    </div>
+                    <div class="rows formOut">
+                        <input class="registerEvent" data-type="phoneNumber" data-code="phoneNumber" type="text" id="phoneNumber" name="phoneNumber" autocomplete="new-phoneNumber" placeholder="โทรศัพท์" maxlength="30">
+                        <div class="items_error itemsError" id="phoneNum"></div>
+                    </div>
+                    <div class="rows formOut eyePassword">
+                        <input class="registerEvent eyePassword_registerInput" data-type="register" data-code="password" type="password" id="registerPassword" name="password" autocomplete="new-password" placeholder="รหัสผ่าน">
+                        <span class="bsicon_eye_off f_gray eyeSwitch_register"></span>
+                        <div class="items_error itemsError" id="registerPasswordErr"></div>
+                    </div>
+                    <div class="rows mb_10">
+                        <button type="button" class="btn btn_primary" onclick="window.LOGIN && LOGIN.register()">ลงทะเบียนเข้าใช้งาน</button>
+                    </div>
+                    <div class="rows ">
+                        <p class="t_c f_gray">คลิก "สมัคร" แสดงว่าคุณยอมรับ</p>
+                        <p class="t_c f_gray"><a href="https://www.bigseller.com/terms.htm">ข้อตกลงการใช้งาน</a>&nbsp;และ&nbsp;<a href="https://www.bigseller.com/privacyPolicy.htm">นโยบายความเป็นส่วนตัว</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hide">
+        <input type="text" name="name">
+        <input type="password" name="password">
+    </div>
+    </body>
+<!-- 加载语言包文件 -->
+<script type="text/javascript" src="https://www.bigseller.com/static/jquery_i18n/js/jquery.i18n.properties-min-1.0.9.js"></script>
+<script src="https://www.bigseller.com/static/js/user/login.js?v=11.4"></script>
+</html>
